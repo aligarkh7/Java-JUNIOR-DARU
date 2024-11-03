@@ -18,14 +18,17 @@ public class Exercise_3 {
 //        Вывод:
 //        False
         int[] numbers = {1, 3, -6, 23, 14, 2};
-        int x = 23; // x = 0 || x = 23
+        int x = 23; // x = 0 || x = 23   просто измените x
+        boolean result = false;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] == x) {
-                System.out.println(true);
+                result = true;
                 break;
             } else if (i == numbers.length - 1) {
-                System.out.println(false);
+                result = false;
             }
         }
+
+        System.out.println(result);
     }
 }

@@ -16,7 +16,7 @@ public class Exercise_13 {
         };
         int min = numbers[0][0], max = numbers[0][0];
         for (int i = 0; i < numbers.length; i++) {
-            for (int j = 0; j < numbers[0].length; j++) {
+            for (int j = 0; j < numbers[i].length; j++) {
                 if (min > numbers[i][j]) {
                     min = numbers[i][j];
                 }

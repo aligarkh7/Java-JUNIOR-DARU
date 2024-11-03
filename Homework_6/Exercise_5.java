@@ -15,9 +15,21 @@ public class Exercise_5 {
         int[] numbers = {34, 82, 29, 30, 25, 40, 32, 31, 35, 410, 7};
         int n = 3;
         int m = 8;
-        if (m < numbers.length){
+        int[] subNumbers = new int[m - n + 1];
+
+        if (m < numbers.length) {
             for (int i = n; i <= m; i++) {
-                System.out.print(numbers[i] + " ");
+                subNumbers[i - n] = numbers[i];
+            }
+        }
+
+        for (int i = 0; i < subNumbers.length; i++) {
+            if (i == 0) {
+                System.out.print("[" + subNumbers[i] + ", ");
+            } else if (i == subNumbers.length - 1) {
+                System.out.print(subNumbers[i] + "]");
+            } else {
+                System.out.print(subNumbers[i] + ", ");
             }
         }
 
@@ -34,9 +46,21 @@ public class Exercise_5 {
         int[] numbers1 = {1, 3, -6, 23, 14, 2};
         n = 1;
         m = 3;
-        if (m < numbers1.length){
+        int[] subNumbers1 = new int[m - n + 1];
+
+        if (m < numbers1.length) {
             for (int i = n; i <= m; i++) {
-                System.out.print(numbers1[i] + " ");
+                subNumbers1[i - n] = numbers1[i];
+            }
+        }
+
+        for (int i = 0; i < subNumbers1.length; i++) {
+            if (i == 0) {
+                System.out.print("[" + subNumbers1[i] + ", ");
+            } else if (i == subNumbers1.length - 1) {
+                System.out.print(subNumbers1[i] + "]");
+            } else {
+                System.out.print(subNumbers1[i] + ", ");
             }
         }
 

@@ -15,6 +15,7 @@ public class Exercise_1 {
             AVG += numbers[i];
         }
         AVG /= numbers.length;
+
         System.out.println("Среднее значение = " + AVG);
     }
 }

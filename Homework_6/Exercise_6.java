@@ -10,6 +10,7 @@ public class Exercise_6 {
 //        Максимальный элемент = 23
         int[] numbers = {1, 3, -6, 23, 14, 2};
         int min = numbers[0], max = numbers[0];
+
         for (int i = 0; i < numbers.length; i++) {
             if (min > numbers[i]) {
                 min = numbers[i];
@@ -19,6 +20,7 @@ public class Exercise_6 {
                 max = numbers[i];
             }
         }
+
         System.out.println("Минимальный элемент = " + min);
         System.out.println("Максимальный элемент = " + max);
     }

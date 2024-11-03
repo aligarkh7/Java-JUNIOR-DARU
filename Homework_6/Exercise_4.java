@@ -18,7 +18,7 @@ public class Exercise_4 {
 //        Не найдено
 
         int[] numbers = {1, 3, -6, 23, 14, 2};
-        int x = 5;
+        int x = 23; //       x = 5 || x = 23     просто измените x
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] == x) {
                 System.out.println("Индекс = " + i);
