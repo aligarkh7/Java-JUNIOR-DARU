@@ -14,6 +14,6 @@ public class Exercise_4 {
     }
 
     private static int countWord(String str){
-        return str.replaceAll(" ","\n").lines().toArray().length;
+        return str.split(" ").length;
     }
 }

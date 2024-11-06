@@ -51,10 +51,15 @@ public class Homework5 {
 //        4. Дано целое положительное число. Напишите программу, которая выводит это число в обратном порядке.
 //        Например, если дано число 12345, то вывод будет следующим: 54321.
         int number = 12345;
+        int reverseNumber = 0;
         while (number != 0) {
-            System.out.print(number % 10);
+            reverseNumber += number % 10;
+            if (number / 10 != 0) {
+                reverseNumber *= 10;
+            }
             number /= 10;
         }
+        System.out.println(reverseNumber);
         System.out.println();
 
 
