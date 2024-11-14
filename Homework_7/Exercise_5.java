@@ -19,7 +19,7 @@ public class Exercise_5 {
         }
 
         if (number % 10 == value) {
-            return 1 + countingTheNumberOfNumbers(number / 10, value);
+            return countingTheNumberOfNumbers(number / 10, value) + 1;
         } else {
             return countingTheNumberOfNumbers(number / 10, value);
         }
