@@ -14,11 +14,9 @@ public class Exercise_8 {
     }
 
     private static int numberSum(int number) {
-        int sum = 0;
-        while (number != 0) {
-            sum += number % 10;
-            number /= 10;
+        if (number == 0) {
+            return 0;
         }
-        return sum;
+        return number % 10 + numberSum(number / 10);
     }
 }
