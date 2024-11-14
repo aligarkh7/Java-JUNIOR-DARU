@@ -14,13 +14,14 @@ public class Exercise_5 {
     }
 
     private static int countingTheNumberOfNumbers(int number, int value) {
-        int index = 0;
-        while (number / 10 != 0) {
-            if (number % 10 == value) {
-                index++;
-            }
-            number /= 10;
+        if (number == 0) {
+            return 0;
         }
-        return index;
+
+        if (number % 10 == value) {
+            return 1 + countingTheNumberOfNumbers(number / 10, value);
+        } else {
+            return countingTheNumberOfNumbers(number / 10, value);
+        }
     }
 }
