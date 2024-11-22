@@ -12,12 +12,10 @@ public class Exercise_7 {
         int sides = 5;
         int lengthOfSide = 6;
 
-        System.out.printf("Площадь пятиугольника равна %.3f", calculateAreaPentagon(lengthOfSide));
+        System.out.printf("Площадь пятиугольника равна %.3f", calculateAreaPentagon(lengthOfSide, sides));
     }
 
-    private static float calculateAreaPentagon(int lengthOfSide) {
-        float h = (float) ((lengthOfSide / 2.0f) / (Math.tan(36 * (Math.PI / 180))));
-        float A = (((lengthOfSide / 2.0f) * h) / 2) * 10;
-        return A;
+    private static float calculateAreaPentagon(int lengthOfSide, int sides) {
+        return (float) ((sides * Math.pow(lengthOfSide,2)) / (4 * Math.tan(Math.PI / sides)));
     }
 }

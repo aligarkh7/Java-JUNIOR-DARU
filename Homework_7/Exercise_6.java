@@ -15,7 +15,7 @@ public class Exercise_6 {
     }
 
     private static boolean isVowels(String str){
-        String vowels = "AEIOUY";
+        String vowels = "AEIOU";
         for (char c: str.toLowerCase().toCharArray()){
             if (vowels.toLowerCase().indexOf(c)==-1){
                 return false;

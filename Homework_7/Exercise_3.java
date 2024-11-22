@@ -13,7 +13,7 @@ public class Exercise_3 {
     }
 
     private static int countVowels(String str) {
-        String vowels = "AEIOUY";
+        String vowels = "AEIOU";
         int index = 0;
         for (char c : str.toLowerCase().toCharArray()) {
             if (vowels.toLowerCase().indexOf(c) != -1) {
