@@ -6,7 +6,7 @@ public class Main {
                 4,2,3
         };
         Average average = new Average(numbers);
-        System.out.println(average.getAVGArray());
+        System.out.println(average.getAVG());
 
         Average average1 = new Average(1,2,3);
         System.out.println(average1.getAVG());
