@@ -57,4 +57,12 @@ public class Temperature {
         setTemperatures(temperatures);
         setScales(scales);
     }
+
+    @Override
+    public String toString() {
+        return "temperatures = " + temperatures +
+                ", scales = " + scales +
+                ", degreesCelsius = " + degreesCelsius() +
+                ", degreesFahrenheit = " + degreesFahrenheit();
+    }
 }

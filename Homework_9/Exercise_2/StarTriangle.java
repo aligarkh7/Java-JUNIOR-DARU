@@ -1,7 +1,7 @@
 package Homework_9.Exercise_2;
 
 public class StarTriangle {
-    private final String star = "[*]";
+    private final String STAR = "[*]";
     private int width;
     private String string = "";
 
@@ -13,7 +13,7 @@ public class StarTriangle {
     private void creatingATriangle() {
         for (int i = 0; i < width; i++) {
             for (int j = 0; j <= i; j++) {
-                string += star;
+                string += STAR;
             }
             string += "\n";
         }
