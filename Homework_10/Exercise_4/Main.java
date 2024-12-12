@@ -11,9 +11,7 @@ public class Main {
         addStudent(5);
         addStudent(4);
 
-        for (Student student : students) {
-            System.out.println(student);
-        }
+        students.forEach(student -> System.out.println(student));
     }
 
     private static void addStudent(int grade) {

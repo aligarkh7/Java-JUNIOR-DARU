@@ -6,21 +6,22 @@ public class Main {
     public static void main(String[] args) {
         LinkedList<String> linkedList = new LinkedList<>();
 
-        linkedList.add("a");
-        linkedList.add("b");
-        linkedList.add("c");
-        linkedList.add("d");
-        linkedList.add("e");
-        linkedList.add("f");
-        linkedList.add("g");
+        linkedList.add("A");
+        linkedList.add("B");
+        linkedList.add("C");
+        linkedList.add("D");
+        linkedList.add("E");
+        linkedList.add("F");
+        linkedList.add("G");
 
         System.out.println(linkedList);
 
-        linkedList.set(1,"B");
+        int firstIndex = 0;
+        int secondIndex = 1;
 
-        System.out.println(linkedList);
-
-        linkedList.set(3,"DD");
+        String temp = linkedList.get(firstIndex);
+        linkedList.set(firstIndex, linkedList.get(secondIndex));
+        linkedList.set(secondIndex,temp);
 
         System.out.println(linkedList);
     }

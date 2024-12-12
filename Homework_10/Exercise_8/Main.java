@@ -12,7 +12,9 @@ public class Main {
 
         System.out.println(arrayList);
 
-        arrayList.set(1,"B");
+        if (arrayList.size() > 1) {
+            arrayList.set(1, "B");
+        }
 
         System.out.println(arrayList);
 

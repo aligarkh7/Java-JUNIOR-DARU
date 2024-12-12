@@ -18,13 +18,9 @@ public class Main {
         secondSet.add("Yellow");
         System.out.println(secondSet);
 
-        HashSet<String> result = new HashSet<>();
+        HashSet<String> result = new HashSet<>(firstSet);
 
-        for (String s: firstSet){
-            if (secondSet.contains(s)){
-                result.add(s);
-            }
-        }
+        result.retainAll(secondSet);
 
         System.out.println(result);
 
