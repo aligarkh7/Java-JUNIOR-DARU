@@ -10,11 +10,11 @@ public class Main {
         int number = 0;
 
         try {
-            for (Object s: string.replace(" ", "\n").lines().toArray()){
+            for (Object s : string.replace(" ", "\n").lines().toArray()) {
                 number = number + Integer.parseInt(s.toString());
             }
             System.out.println(number);
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             System.out.println("Неправильный ввод");
         }
     }
