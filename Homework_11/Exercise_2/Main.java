@@ -10,8 +10,7 @@ public class Main {
     private static double divide(int x, int y){
         if (y == 0){
             throw new RuntimeException("Число на 0 делить нельзя");
-        }else {
-            return (double) x /y;
         }
+        return (double) x /y;
     }
 }

@@ -14,7 +14,7 @@ public class Main {
                 number = number + Integer.parseInt(s.toString());
             }
             System.out.println(number);
-        }catch (Exception e){
+        }catch (NumberFormatException e){
             System.out.println("Неправильный ввод");
         }
     }
