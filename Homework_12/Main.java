@@ -32,16 +32,16 @@ public class Main {
 
 //        4) Напишите программу, которая принимает от пользователя три числа и выводит наибольшее из них
         Scanner scanner = new Scanner(System.in);
-//        int a1 = scanner.nextInt();
-//        int a2 = scanner.nextInt();
-//        int a3 = scanner.nextInt();
-//        if (a1 > a2 && a1 > a3) {
-//            System.out.println(a1);
-//        } else if (a2 > a3) {
-//            System.out.println(a2);
-//        } else {
-//            System.out.println(a3);
-//        }
+        int a1 = scanner.nextInt();
+        int a2 = scanner.nextInt();
+        int a3 = scanner.nextInt();
+        if (a1 > a2 && a1 > a3) {
+            System.out.println(a1);
+        } else if (a2 > a3) {
+            System.out.println(a2);
+        } else {
+            System.out.println(a3);
+        }
 
 //        5) Напишите программу для проверки того, является ли число положительным или отрицательным
         int number = -1;
