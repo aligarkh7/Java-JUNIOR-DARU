@@ -10,10 +10,12 @@ public class SumOfAllOddLengthSubarrays {
         int sum = 0;
         for (int i = 0; i < arr.length; i += 2) {
             for (int j = 0; j < arr.length; j++) {
-                if (j + i < arr.length) {
-                    for (int k = j; k < i + j + 1; k++) {
-                        sum += arr[k];
-                    }
+                if (j + i >= arr.length) {
+                    break;
+                }
+
+                for (int k = j; k < i + j + 1; k++) {
+                    sum += arr[k];
                 }
             }
         }
